@@ -1,0 +1,230 @@
+/* this file is related to all the styling done to meals.html page */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: rgb(184, 180, 180);
+}
+
+.meal-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border-bottom: 2px solid grey;
+    height:10vh;
+    color:black;
+    box-shadow: 1px 1px grey;
+    opacity: 0.7;
+}
+
+.meal-nav img{
+    height:4em;
+    border-radius:50%;
+    padding:4px;
+}
+.navbar-header span{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family:cursive;
+    margin:auto 0;
+}
+.fav-meals{
+    margin:auto 0.2em;
+}
+.fav-meals a{
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+    font-family: cursive;
+}
+
+.navbar-links li{
+    list-style: none;
+    padding:4px;
+    margin-top:6%;
+    font-size:1.2em;
+    margin-left:0.5em;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 3vh;
+    color: black;
+    font-weight: 700;
+    margin-top: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.meal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mealFinder{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 25px;
+    width:25em;
+    text-align: center;
+}
+
+.mealFinder input{
+    border: none;
+    background: transparent;
+    padding: 0.5em 0.5em;
+    font-size: 1em;
+    font-weight: 700;
+    border: 1px solid transparent;
+    color:black;
+    border-radius: 25px;
+    width: 100%;
+}
+input[type="search"]::placeholder {
+    color: black;
+    background-color: white;
+}
+
+.search-btn{
+    width:3em;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+button[type="submit"]:focus,
+#search:focus {
+    outline: none;
+    background-color: rgb(170, 167, 167);
+    border-radius: 25px;
+    color: white;
+}
+
+.random-btn {
+    width: 3em;
+    border: 2px solid grey;
+    background: white;
+    cursor: pointer;
+    height:2.8em;
+    margin-left: 2%;
+    font-size:1em;
+    border-radius:4px;
+}
+
+h4{
+    font-weight: 500;
+    font-size: 1.6em;
+    margin:1.5em auto;
+    color: aliceblue;
+    background-color: orange;
+    width: fit-content;
+    letter-spacing: 2;
+    padding:3px;
+}
+
+.all-meals-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.all-meals-container button{
+    position: absolute;
+    top: 25%;
+    background: rgba(255, 255, 255, 0.7);
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    border-radius:8px;
+    
+}
+.all-meals-container a{
+    position: absolute;
+    top: 40%;
+    color: black;
+    text-decoration: none;
+    background: orange;
+    border-radius: 10px;
+    transition: opacity 0.4s ease-in;
+    opacity: 0;
+    padding: 3px;
+}
+
+.all-meals-container button:hover,a:hover{
+    border: 4px solid grey;
+    opacity: 0.9;
+}
+#all-meals{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.meal-display{ 
+    /* flex: 1 0 32%; */
+    cursor: pointer;
+    text-align: center;
+    height: 15em;
+    width: 15em;
+    margin:1em 0;
+    padding:1em;
+}
+.meal-display img{
+    height:10em;
+    width:100%;
+    border: 4px solid grey;
+    border-radius: 4px;
+    padding:2px;
+    
+}
+
+.meal-info h5{
+    background-color: white;
+    border:2px solid black;
+    padding:2px;
+    font-size: 0.85em;
+    width: 100%;
+}
+
+
+@media(max-width: 800px) {
+    h4{
+        font-size: 2em;
+    }
+}
+
+@media(max-width: 700px) {
+    .meal-display {
+        height: 200px;
+        width: 200px;
+    }
+    h4 {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 650px) {
+    input[type='text'] {
+        width: 100%;
+        font-size: 0.5em;
+    }
+
+    .meal-display {
+        height: 300px;
+        width: 300px;
+    }
+
+    h4{
+        font-size:1em;
+    }
+    #random-btn{
+        height:0.5em;
+    }
+}

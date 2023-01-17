@@ -1,0 +1,62 @@
+#recipe-page-head{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 3em;
+    /* text-align: center; */
+    letter-spacing: 2px;
+    background-color: rgb(245, 141, 5);
+    width:fit-content;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    margin:auto;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 1em;
+}
+i{
+    font-size: 2em;
+    padding:4px;
+}
+.recipe-details{
+    width: 90%;
+    /* height: 60vh; */
+    border: 4px solid grey;
+    background-color: white;
+    text-align: center;
+    margin: 5em auto;
+    padding:4px;
+    box-shadow: 5px 10px #888888;
+}
+#recipe-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.instructions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructions p{
+    font-family: cursive;
+    border: 1px solid black;
+    padding:4px;
+    letter-spacing: 2;
+}
+.instructions img{
+    height:12em;
+    padding: 4px;
+    border-radius:25px;
+    /* border:1px solid black; */
+}
+

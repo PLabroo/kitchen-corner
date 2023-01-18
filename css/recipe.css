@@ -5,8 +5,8 @@ body {
 #recipe-page-head{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    font-size: 3em;
-    letter-spacing: 2px;
+    font-size: 2em;
+    letter-spacing: 1px;
     background-color: rgb(245, 141, 5);
     width:fit-content;
     margin: 0 auto;
@@ -17,7 +17,6 @@ a{
     font-size: 1em;
     margin:auto;
     display: flex;
-    justify-content:flex-end;
     margin-top: 1em;
 }
 i{
@@ -36,14 +35,14 @@ i{
     box-shadow: 5px 10px #888888;
 }
 #recipe-heading{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:cursive;
     font-weight: 700;
     font-size: 2.5em;
 }
 
 h3{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
+    font-family:cursive;
+    font-weight: 200;
     font-size: 1.5em;
 }
 .instructions{
@@ -64,12 +63,12 @@ h3{
 }
 @media(max-width: 850px) {
     #recipe-page-head{
-        font-size: 2.5em;
+        font-size: 2em;
     }
 }
 
 @media(max-width: 501px) {
     #recipe-page-head {
-        font-size: 2em;
+        font-size: 1.6em;
     }
 }

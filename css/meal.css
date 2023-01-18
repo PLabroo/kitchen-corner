@@ -1,0 +1,262 @@
+/* this file is related to all the styling done to meals.html page */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    /* background-color: rgb(184, 180, 180); */
+    background-image: url("https://images.unsplash.com/photo-1517400415121-f913b6f87532?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
+    background-size:cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.meal-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border-bottom: 2px solid grey;
+    height:10vh;
+    color:black;
+    box-shadow: 1px 1px grey;
+    opacity: 0.7;
+}
+
+.meal-nav img{
+    height:4em;
+    border-radius:50%;
+    padding:4px;
+}
+.navbar-header{
+    margin: auto 0;
+}
+.navbar-header span{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family:cursive;
+    
+}
+.fav-meals{
+    margin:auto 0.2em;
+}
+.fav-meals a{
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+    font-family: cursive;
+}
+
+.navbar-links li{
+    list-style: none;
+    padding:4px;
+    margin-top:6%;
+    font-size:1.2em;
+    margin-left:0.5em;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 3vh;
+    color: rgb(0, 251, 255);
+    font-weight: 700;
+    margin-top: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.meal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mealFinder{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 25px;
+    width:25em;
+    text-align: center;
+}
+
+.mealFinder input{
+    border: none;
+    background: transparent;
+    padding: 0.5em 0.5em;
+    font-size: 1em;
+    font-weight: 700;
+    border: 1px solid transparent;
+    color:black;
+    border-radius: 25px;
+    width: 100%;
+}
+input[type="search"]::placeholder {
+    color: black;
+    background-color: white;
+}
+
+.search-btn{
+    width:3em;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+button[type="submit"]:focus,
+#search:focus {
+    outline: none;
+    background-color: rgb(170, 167, 167);
+    border-radius: 25px;
+    color: white;
+}
+
+.random-btn {
+    width: 3em;
+    border: 2px solid grey;
+    background: white;
+    cursor: pointer;
+    height:2.8em;
+    margin-left: 2%;
+    font-size:1em;
+    border-radius:4px;
+}
+
+h4{
+    font-weight: 500;
+    font-size: 1.6em;
+    margin:1.5em auto;
+    color: aliceblue;
+    background-color: orange;
+    width: fit-content;
+    letter-spacing: 2;
+    padding:3px;
+}
+
+.all-meals-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.all-meals-container button{
+    position: absolute;
+    top: 25%;
+    background: rgba(255, 255, 255, 0.7);
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    border-radius:8px;
+    
+}
+.all-meals-container a{
+    position: absolute;
+    top: 40%;
+    color: black;
+    text-decoration: none;
+    background: orange;
+    border-radius: 10px;
+    transition: opacity 0.4s ease-in;
+    opacity: 0;
+    padding: 3px;
+}
+
+.all-meals-container button:hover,a:hover{
+    border: 4px solid grey;
+    opacity: 0.9;
+}
+#all-meals{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.meal-display{ 
+    /* flex: 1 0 32%; */
+    cursor: pointer;
+    text-align: center;
+    height: 15em;
+    width: 15em;
+    margin:1em 0;
+    padding:1em;
+}
+.meal-display img{
+    height:10em;
+    width:100%;
+    border: 4px solid rgb(0, 251, 255);
+    border-radius: 4px;
+    padding:2px;
+    
+}
+
+.meal-info h5{
+    background-color: white;
+    border:2px solid grey;
+    padding:2px;
+    font-size: 0.85em;
+    width: 100%;
+}
+
+
+@media(max-width: 850px) {
+    .navbar-header img{
+        font-size:1em;
+    }
+
+    .navbar-header span{
+        font-size:1.3em;
+    }
+
+    .fav-meals a{
+        font-size:1em;
+    }
+    h1{
+        font-size:2em;
+    }
+    input[type='text'] {
+        width:50%;
+        font-size: 1em;
+    }
+    h4{
+        font-size:1.5em;
+    }
+    .random-btn{
+        font-size:1em;
+    }
+    .mealFinder input{
+        width: 100%;
+    }
+}
+
+@media(max-width: 501px) {
+
+    .navbar-header img{
+        font-size:0.9em;
+    }
+
+    .navbar-header span{
+        font-size:1em;
+    }
+
+    .fav-meals a{
+        font-size:0.8em;
+    }
+    h1{
+        font-size:1.5em;
+    }
+    input[type='text'] {
+        width:50%;
+        font-size: 0.8em;
+    }
+    h4{
+        font-size:1em;
+    }
+    .random-btn{
+        font-size:0.8em;
+    }
+    .mealFinder input {
+        width: 100%;
+    }
+}

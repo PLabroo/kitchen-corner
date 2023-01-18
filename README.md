@@ -1,7 +1,9 @@
 # Kitchen-Corner
 
-/ *********************** /
-Kitchen Corner is a meal app created using meal API(https://www.themealdb.com/api.php)
+/ *********************** /\\
+
+Kitchen Corner is a meal app created using meal API(https://www.themealdb.com/api.php)\\
+
 Tech Stack Used is:
 1)HTML
 2)CSS

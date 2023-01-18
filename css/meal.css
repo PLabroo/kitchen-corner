@@ -8,7 +8,7 @@ body{
     /* background-color: rgb(184, 180, 180); */
     background-image: url("https://images.unsplash.com/photo-1517400415121-f913b6f87532?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
     background-size:cover;
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
 }
 

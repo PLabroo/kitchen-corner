@@ -133,12 +133,12 @@ const fetchByID = async(id) => {
     if (res.ok)
     {
         const data = await res.json();
-        setToLocal(data);
+        saveInLocalStorage(data);
     }
 };
 
 // method connected to fetchID to store meals description in local storage and also call recipe.html page
-const setToLocal = (obj)=>{
+const saveInLocalStorage = (obj)=>{
   const meal = obj.meals;
   localStorage.setItem("mealsRecipe", JSON.stringify(meal[0]));
   window.location.href = "./recipe.html";

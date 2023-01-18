@@ -7,7 +7,9 @@
 body{
     /* background-color: rgb(184, 180, 180); */
     background-image: url("https://images.unsplash.com/photo-1517400415121-f913b6f87532?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
-    background-size: cover;
+    background-size:cover;
+    height: 100vh;
+    background-repeat: no-repeat;
 }
 
 .meal-nav{
@@ -26,11 +28,14 @@ body{
     border-radius:50%;
     padding:4px;
 }
+.navbar-header{
+    margin: auto 0;
+}
 .navbar-header span{
     font-size: 1.3em;
     font-weight: 700;
     font-family:cursive;
-    margin:auto 0;
+    
 }
 .fav-meals{
     margin:auto 0.2em;
@@ -195,37 +200,63 @@ h4{
 }
 
 
-@media(max-width: 800px) {
-    h4{
-        font-size: 2em;
+@media(max-width: 850px) {
+    .navbar-header img{
+        font-size:1em;
     }
-}
 
-@media(max-width: 700px) {
-    .meal-display {
-        height: 200px;
-        width: 200px;
+    .navbar-header span{
+        font-size:1.3em;
     }
-    h4 {
-        font-size: 1.5em;
-    }
-}
 
-@media(max-width: 650px) {
+    .fav-meals a{
+        font-size:1em;
+    }
+    h1{
+        font-size:2em;
+    }
     input[type='text'] {
+        width:50%;
+        font-size: 1em;
+    }
+    h4{
+        font-size:1.5em;
+    }
+    .random-btn{
+        font-size:1em;
+    }
+    .mealFinder input{
         width: 100%;
-        font-size: 0.5em;
+    }
+}
+
+@media(max-width: 501px) {
+
+    .navbar-header img{
+        font-size:0.9em;
     }
 
-    .meal-display {
-        height: 300px;
-        width: 300px;
+    .navbar-header span{
+        font-size:1em;
     }
 
+    .fav-meals a{
+        font-size:0.8em;
+    }
+    h1{
+        font-size:1.5em;
+    }
+    input[type='text'] {
+        width:50%;
+        font-size: 0.8em;
+    }
     h4{
         font-size:1em;
     }
-    #random-btn{
-        height:0.5em;
+    .random-btn{
+        font-size:0.8em;
+    }
+    .mealFinder input {
+        width: 100%;
     }
 }

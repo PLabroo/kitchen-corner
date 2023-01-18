@@ -26,7 +26,9 @@ body {
     padding: 4px;
     vertical-align: middle;
 }
-
+.navbar-header{
+    margin: auto 0;
+}
 .navbar-header span {
     font-size: 1.3em;
     font-weight: 700;
@@ -143,7 +145,7 @@ a:hover {
 .meal-display img {
     height: 10em;
     width: 100%;
-    border: 3px solid grey;
+    border: 3px solid aqua;
     border-radius: 4px;
     padding: 2px;
 
@@ -154,4 +156,75 @@ a:hover {
     border: 3px solid grey;
     padding: 2px;
     width: 100%;
+}
+
+@media(max-width: 850px) {
+    .navbar-header img {
+        font-size: 1.2em;
+    }
+
+    .navbar-header span {
+        font-size: 1.3em;
+    }
+
+    .fav-meals a {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type='text'] {
+        width: 50%;
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .random-btn {
+        font-size: 1em;
+    }
+
+    .mealFinder input {
+        width: 100%;
+    }
+}
+
+@media(max-width: 501px) {
+
+    .navbar-header img {
+        font-size: 0.9em;
+    }
+
+    .navbar-header span {
+        font-size: 1em;
+    }
+
+    .fav-meals a {
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type='text'] {
+        width: 50%;
+        font-size: 0.8em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    .random-btn {
+        font-size: 0.8em;
+    }
+
+    .mealFinder input {
+        width: 100%;
+    }
 }
